@@ -17,12 +17,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+        //print(Realm.Configuration.defaultConfiguration.fileURL)
         // Override point for customization after application launch.
         do {
-             let realm = try Realm()
+            _ = try Realm()
         } catch {
             print(error)
         }
+        
+        
         return true
     }
 
